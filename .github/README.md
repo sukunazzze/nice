@@ -2,7 +2,7 @@
 
 <h4 align="center">Logi A Powerful, Smart And Simple Bot To Play Audio And Video Song In Telegram<br> ... Written With Python and Telethon...</h4>
 
-<p align="center"><a href="https://t.me/aboutlogesh"><img src="https://telegra.ph/file/849b9f8f22403fa1e2f17.jpg" width="400"></a></p>
+<p align="center"><a href="https://t.me/aboutlogesh"><img src="https://media.wired.com/photos/59549ff18e8cc150fa8ec6c2/master/w_1600%2Cc_limit/Logi_RGB-copy.jpg" width="400"></a></p>
 
 <p align="center">
     <a href="https://app.codacy.com/manual/LOGI-LAB/LogiMusic/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
@@ -155,9 +155,6 @@ YOUƦ ꞮMOƦTED ƦEPO LꞮNK ꜱTAƦT WꞮTH GꞮTHUB
 YOUƦ ACCOUNT EMAꞮL
 ✪---------------✪-----------✪
 
-
-<h6> ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ ʟᴏɢɪ ᴏɴ ᴏᴋᴛᴇᴛᴏ</h6>    
-<a href="https://cloud.okteto.com/deploy?repository=https://github.com/LOGI-LAB/LogiMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200"/></a>
 
 
 
