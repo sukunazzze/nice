@@ -2,7 +2,6 @@
 # Copyright (C) 2021-2022 by Logi_Help@Github, < https://github.com/LOGI-LAB >.
 # @logi-channel in telegram
 
-.
 
 
 from motor.motor_asyncio import AsyncIOMotorClient as _mongo_client_
