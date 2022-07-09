@@ -48,6 +48,16 @@
        "value": "@cl_me_logesh",
        "required":true
       },
+      "SUPPORT_CHANNEL": {
+        "description": "the bot owner user name",
+        "value": "https://t.me/logi_channel",
+        "required":true
+       },
+       "SUPPORT_GROUP": {
+        "description": "the bot owner user name",
+        "value": "https://t.me/lgbots",
+        "required":true
+       },             
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
         "value": "5303133436",

@@ -126,7 +126,7 @@
 > ɪɴ ᴛʜɪꜱ ʀᴀɪʟᴡᴀʏ ᴅᴇᴘᴏʟʏ , ʏᴏᴜ ꜰɪʟʟ ᴀʟʟ ᴛʜᴇ ᴠᴀʀɪᴀʙʟᴇꜱ ʀᴇQᴜɪʀᴇᴅ .
 
 <h5> ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ ʟᴏɢɪ ᴏɴ ʀᴀɪʟᴡᴀʏ</h5> 
-<p><a href="https://railway.app/new/template?template=https://github.com/LOGI-LAB/LogiMusic&envs=STRING_SESSION,BOT_TOKEN,MUSIC_BOT_NAME,API_ID,API_HASH,OWNER_ID,DURATION_LIMIT,AUTO_LEAVING_ASSISTANT,MONGO_DB_URI,START_IMG_URL,PING_IMG_URL,OWNER_ID,UPSTREAM_BRANCH,UPSTREAM_REPO,LOG_GROUP_ID,SUPPORT_CHANNEL,SUPPORT_GROUP,GIT_TOKEN"><img src="https://railway.app/button.svg" width="200"/></a></p>
+<p><a href="https://railway.app/new/template?template=https://github.com/LOGI-LAB/LogiMusic&envs=STRING_SESSION,BOT_TOKEN,MUSIC_BOT_NAME,API_ID,API_HASH,OWNER_ID,DURATION_LIMIT,AUTO_LEAVING_ASSISTANT,MONGO_DB_URI,START_IMG_URL,PING_IMG_URL,UPSTREAM_BRANCH,UPSTREAM_REPO,LOG_GROUP_ID,SUPPORT_CHANNEL,SUPPORT_GROUP,GIT_TOKEN"><img src="https://railway.app/button.svg" width="200"/></a></p>
 
 <details>
 <summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ᴏᴋᴛᴇᴛᴏ</b></summary>
@@ -138,27 +138,13 @@
 <h6> ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ ʟᴏɢɪ ᴏɴ ᴏᴋᴛᴇᴛᴏ</h6>    
 <a href="https://cloud.okteto.com/deploy?repository=https://github.com/LOGI-LAB/LogiMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200"/></a>
 
-<details>
-<summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ᴏᴋᴛᴇᴛᴏ</b></summary>
-<br>
-
-> ɪɴ ᴏᴋᴛᴇᴛᴏ ᴘʟᴀᴛꜰᴏʀᴍ ʏᴏᴜ ꜰɪʟʟ ᴀʟʟ ᴠᴀʀɪᴀʙʟᴇꜱ ꜱᴏ ꜰɪʟʟ ᴛʜɪꜱ .
->ꜱᴏ ʏᴏᴜ ᴀʟʟ ᴀʟꜱᴏ ᴅᴇᴘᴏʟʏ ʏᴏᴜʀ ʙᴏᴛ ɪɴ ɢɪᴛʜᴜʙ . ꜰᴏʀᴋ ᴛʜɪꜱ ʀᴇᴘᴏ ᴀɴᴅ ꜰɪʟʟ ᴛʜɪꜱ ✪---------------✪-----------✪
-KEYꜱ ƦEǪUꞮƦED
-ɢɪᴛ_ᴛᴏᴋᴇɴ
-YOUƦ PEƦꜱONAL TOKEN
-ɢɪᴛ_ɴᴀᴍᴇ
-YOUƦ GꞮT UꜱEƦNAME
-ɢɪᴛ_ʀᴇᴘᴏ
-YOUƦ ꞮMOƦTED ƦEPO LꞮNK ꜱTAƦT WꞮTH GꞮTHUB
-ɢɪᴛ_ᴇᴍᴀɪʟ
-YOUƦ ACCOUNT EMAꞮL
-✪---------------✪-----------✪
 
 
 
 
 
+
+</details>
 </details>
 </details>
 </details>

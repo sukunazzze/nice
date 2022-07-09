@@ -85,7 +85,7 @@ async def gen_thumb(videoid):
         )
         draw.text(
             (600, 150),
-            f"By Alexa",
+            f"MUSIC IS LIFE",
             fill="yellow",
             stroke_width=2,
             stroke_fill="green",
