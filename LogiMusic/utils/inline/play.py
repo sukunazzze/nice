@@ -1,5 +1,6 @@
 from pyrogram.types import InlineKeyboardButton
 from config import SUPPORT_GROUP, SUPPORT_CHANNEL , OWNER_USERNAME
+from typing import Union
 
 
 ## After Edits with Timer Bar
@@ -21,7 +22,7 @@ def time_to_sec(time: str):
 
     return total_sec
 
-def stream_markup_timer(_, videoid, chat_id, played, dur):
+def stream_markup_timer(_, videoid, chat_id, played, dur, OWNER: Union[bool, int] = None):
     played_sec = time_to_sec(played)
     total_sec = time_to_sec(dur)
 
@@ -48,7 +49,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="♡︎ ᴏᴡɴᴇʀ ♡︎", url=f"https://t.me/{OWNER_USERNAME}")
+                text="♡︎ ᴏᴡɴᴇʀ ♡︎", user_id= OWNER )
         ],
         [
             InlineKeyboardButton(
@@ -68,7 +69,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     return buttons
 
 
-def telegram_markup_timer(_, chat_id, played, dur):
+def telegram_markup_timer(_, chat_id, played, dur,  OWNER: Union[bool, int] = None):
     played_sec = time_to_sec(played)
     total_sec = time_to_sec(dur)
 
@@ -95,7 +96,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="♡︎ ᴏᴡɴᴇʀ ♡︎", url=f"t.me/{OWNER_USERNAME}")
+                text="♡︎ ᴏᴡɴᴇʀ ♡︎", user_id= OWNER)
         ],
         [
             InlineKeyboardButton(
@@ -118,7 +119,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
 ## Inline without Timer Bar
 
 
-def stream_markup(_, videoid, chat_id):
+def stream_markup(_, videoid, chat_id ,  OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
@@ -126,7 +127,7 @@ def stream_markup(_, videoid, chat_id):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="♡︎ ᴏᴡɴᴇʀ ♡︎", url=f"t.me/{OWNER_USERNAME}")
+                text="♡︎ ᴏᴡɴᴇʀ ♡︎", user_id= OWNER)
         ],
         [
             InlineKeyboardButton(
