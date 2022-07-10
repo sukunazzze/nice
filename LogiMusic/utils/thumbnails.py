@@ -60,9 +60,9 @@ async def gen_thumb(videoid):
         youtube = Image.open(f"cache/thumb{videoid}.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(30))
+        background = image2.filter(filter=ImageFilter.BoxBlur(50))
         enhancer = ImageEnhance.Brightness(background)
-        background = enhancer.enhance(0.6)
+        background = enhancer.enhance(0.9)
         Xcenter = youtube.width / 2
         Ycenter = youtube.height / 2
         x1 = Xcenter - 250
@@ -71,24 +71,24 @@ async def gen_thumb(videoid):
         y2 = Ycenter + 250
         logo = youtube.crop((x1, y1, x2, y2))
         logo.thumbnail((520, 520), Image.ANTIALIAS)
-        logo = ImageOps.expand(logo, border=15, fill="white")
+        logo = ImageOps.expand(logo, border=17, fill="pink")
         background.paste(logo, (50, 100))
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("assets/font2.ttf", 40)
         font2 = ImageFont.truetype("assets/font2.ttf", 70)
         arial = ImageFont.truetype("assets/font2.ttf", 30)
-        name_font = ImageFont.truetype("assets/font.ttf", 30)
+        name_font = ImageFont.truetype("assets/font.ttf", 40)
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"{MUSIC_BOT_NAME}", fill="white", font=name_font
+            (6, 6), f"Powered By:- {MUSIC_BOT_NAME}", fill="Yellow", font=name_font
         )
         draw.text(
             (600, 150),
-            "NOW PLAYING",
-            fill="white",
+            f"MUSIC IS LIFE",
+            fill="yellow",
             stroke_width=2,
-            stroke_fill="white",
+            stroke_fill="green",
             font=font2,
         )
         for line in para:
@@ -116,20 +116,26 @@ async def gen_thumb(videoid):
         draw.text(
             (600, 450),
             f"Views : {views[:23]}",
-            (255, 255, 255),
-            font=arial,
+            fill="white",
+            stroke_width=1,
+            stroke_fill="white",
+            font=font,
         )
         draw.text(
             (600, 500),
             f"Duration : {duration[:23]} Mins",
-            (255, 255, 255),
-            font=arial,
+            fill="white",
+            stroke_width=1,
+            stroke_fill="white",
+            font=font,
         )
         draw.text(
             (600, 550),
-            f"Channel : {channel}",
-            (255, 255, 255),
-            font=arial,
+            f"Owner : Logi",
+            fill="white",
+            stroke_width=1,
+            stroke_fill="white",
+            font=font,
         )
         try:
             os.remove(f"cache/thumb{videoid}.png")
