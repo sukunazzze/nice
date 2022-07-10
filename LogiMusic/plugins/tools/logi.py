@@ -26,7 +26,7 @@ ABOUT_LOGI = get_command("ABOUT_LOGI")
     & filters.group
     & ~filters.edited
 )
-async def about_logi(client, message:Message,_ , photo:InputMediaPhoto):
+async def about_logi(client, message:Message,_):
     
     upl = InlineKeyboardMarkup(
         [
@@ -39,7 +39,7 @@ async def about_logi(client, message:Message,_ , photo:InputMediaPhoto):
         ]
     )
     await message.reply_text(_["pbot_14"], reply_markup=upl)
-    await photo.media("https://te.legra.ph/file/fc96390beb168c19b1788.jpg")
+    await InputMediaPhoto.media("https://te.legra.ph/file/fc96390beb168c19b1788.jpg")
     
 
 
