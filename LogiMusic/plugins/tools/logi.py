@@ -9,7 +9,7 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaAudio,
-                            InputMediaVideo, Message)
+                            InputMediaVideo, Message ,InputMediaPhoto)
 
 from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
@@ -26,7 +26,7 @@ ABOUT_LOGI = get_command("ABOUT_LOGI")
     & filters.group
     & ~filters.edited
 )
-async def about_logi(client, message:Message):
+async def about_logi(client, message:Message,_ , photo:InputMediaPhoto):
     
     upl = InlineKeyboardMarkup(
         [
@@ -38,8 +38,8 @@ async def about_logi(client, message:Message):
             ]
         ]
     )
-    await message.reply_text(["pbot_14"], reply_markup=upl)
-    await app.send_photo("https://te.legra.ph/file/fc96390beb168c19b1788.jpg")
+    await message.reply_text(_["pbot_14"], reply_markup=upl)
+    await photo.media("https://te.legra.ph/file/fc96390beb168c19b1788.jpg")
     
 
 
