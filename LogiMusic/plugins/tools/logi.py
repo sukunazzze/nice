@@ -26,7 +26,7 @@ ABOUT_LOGI = get_command("ABOUT_LOGI")
     & filters.group
     & ~filters.edited
 )
-async def about_logi(client, message:Message,_):
+async def about_logi(client, message:Message):
     
     upl = InlineKeyboardMarkup(
         [
@@ -38,7 +38,7 @@ async def about_logi(client, message:Message,_):
             ]
         ]
     )
-    await message.reply_text(_["pbot_14"], reply_markup=upl)
+    await message.reply_text("👨‍💻**ᴀʙᴏᴜᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ :** \n🦋 ʜɪ ᴍʏ ɴᴀᴍᴇ ɪꜱ ʟᴏɢᴇꜱʜ \n🦋 ᴀʙᴏᴜᴛ ᴍᴇ - [ʟᴏɢᴇꜱʜ](https://t.me/aboutlogesh/12) \n🦋 ᴍʏ ᴄʜᴀɴɴᴇʟꜱ \n\n 💜 [ʟɢ ʙᴏᴛꜱ](https://t.me/LGbots) \n💜 [ʟᴏɢɪ ᴄʜᴀɴɴᴇʟ](https://t.me/LOGI_CHANNEL)\n💜 [ʜᴀᴄᴋᴇʀ x](https://t.me/hacker_x_x)\nᴛʜᴀɴᴋꜱ ꜰᴏʀ ʀᴇᴀᴅ ɪᴛ ❤ ", reply_markup=upl)
     await InputMediaPhoto.media("https://te.legra.ph/file/fc96390beb168c19b1788.jpg")
     
 
