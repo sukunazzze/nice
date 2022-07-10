@@ -68,6 +68,26 @@
         "value": "",
         "required": true
       },
+      "STRING_SESSION2": {
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "value": "",
+        "required": false
+      },
+      "STRING_SESSION3": {
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "value": "",
+        "required": false
+      },
+      "STRING_SESSION4": {
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "value": "",
+        "required": false
+      },        
+      "STRING_SESSION5": {
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "value": "",
+        "required": false
+      },                
       "PING_IMG_URL": {
         "description": "The pic which will be shown when you give the /ping cmd to the bot.",
         "value": "",
