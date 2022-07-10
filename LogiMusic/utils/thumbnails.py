@@ -8,7 +8,7 @@ from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
                  ImageFont, ImageOps)
 from youtubesearchpython.__future__ import VideosSearch
 
-from config import MUSIC_BOT_NAME, YOUTUBE_IMG_URL
+from config import MUSIC_BOT_NAME, YOUTUBE_IMG_URL , OWNER_USERNAME
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -131,7 +131,7 @@ async def gen_thumb(videoid):
         )
         draw.text(
             (600, 550),
-            f"Owner : Logi",
+            f"Owner : {OWNER_USERNAME}",
             fill="white",
             stroke_width=1,
             stroke_fill="white",
