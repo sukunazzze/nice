@@ -26,8 +26,6 @@ ABOUT_LOGI = get_command("ABOUT_LOGI")
     & filters.group
     & ~filters.edited
 )
-
-@language
 async def about_logi(client, message:Message):
     
     upl = InlineKeyboardMarkup(

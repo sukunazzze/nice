@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-2022 by Logi_Help@Github, < https://github.com/LOGI-LAB >.
-# @logi-channel in telegram
-
-
-
-
-
-
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
