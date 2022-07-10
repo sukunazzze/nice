@@ -22,7 +22,7 @@ def time_to_sec(time: str):
 
     return total_sec
 
-def stream_markup_timer(_, videoid, chat_id, played, dur, OWNER: Union[bool, int] = None):
+def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_sec(played)
     total_sec = time_to_sec(dur)
 
@@ -49,7 +49,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur, OWNER: Union[bool, int
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="♡︎ ᴏᴡɴᴇʀ ♡︎", user_id= OWNER )
+                text="♡︎ ᴏᴡɴᴇʀ ♡︎", url=f"https://t.me/{OWNER_USERNAME}" )
         ],
         [
             InlineKeyboardButton(
@@ -69,7 +69,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur, OWNER: Union[bool, int
     return buttons
 
 
-def telegram_markup_timer(_, chat_id, played, dur,  OWNER: Union[bool, int] = None):
+def telegram_markup_timer(_, chat_id, played, dur):
     played_sec = time_to_sec(played)
     total_sec = time_to_sec(dur)
 
@@ -96,7 +96,7 @@ def telegram_markup_timer(_, chat_id, played, dur,  OWNER: Union[bool, int] = No
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="♡︎ ᴏᴡɴᴇʀ ♡︎", user_id= OWNER)
+                text="♡︎ ᴏᴡɴᴇʀ ♡︎", url=f"https://t.me/{OWNER_USERNAME}")
         ],
         [
             InlineKeyboardButton(
@@ -119,7 +119,7 @@ def telegram_markup_timer(_, chat_id, played, dur,  OWNER: Union[bool, int] = No
 ## Inline without Timer Bar
 
 
-def stream_markup(_, videoid, chat_id ,  OWNER: Union[bool, int] = None):
+def stream_markup(_, videoid, chat_id ):
     buttons = [
         [
             InlineKeyboardButton(
@@ -127,7 +127,7 @@ def stream_markup(_, videoid, chat_id ,  OWNER: Union[bool, int] = None):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="♡︎ ᴏᴡɴᴇʀ ♡︎", user_id= OWNER)
+                text="♡︎ ᴏᴡɴᴇʀ ♡︎", url=f"https://t.me/{OWNER_USERNAME}")
         ],
         [
             InlineKeyboardButton(
