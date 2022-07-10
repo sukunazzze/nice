@@ -1,7 +1,23 @@
 
-from strings import get_command
+
+import os
+from pyexpat.errors import messages
+import re
+
+import yt_dlp
+from pykeyboard import InlineKeyboard
 from pyrogram import filters
-from LogiMusic import app
+from pyrogram.types import (InlineKeyboardButton,
+                            InlineKeyboardMarkup, InputMediaAudio,
+                            InputMediaVideo, Message)
+
+from config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
+                    SONG_DOWNLOAD_DURATION_LIMIT)
+from strings import get_command
+from LogiMusic import YouTube, app
+from LogiMusic.utils.decorators.language import language, languageCB
+from LogiMusic.utils.formatters import convert_bytes
+from LogiMusic.utils.inline.song import song_markup
 
 ABOUT_LOGI = get_command("ABOUT_LOGI")
 
@@ -11,15 +27,22 @@ ABOUT_LOGI = get_command("ABOUT_LOGI")
     & ~filters.edited
 )
 
-def about_logi():
+@language
+async def about_logi(client, message:Message):
+    
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text= " 🦋 ᴍʏ ᴋɪɴɢ 🦋",
+                    url=f"https://t.me/aboutlogesh/12",
+                ),
+            ]
+        ]
+    )
+    await message.reply_text(["pbot_14"], reply_markup=upl)
+    await app.send_photo("https://te.legra.ph/file/fc96390beb168c19b1788.jpg")
+    
 
- """👨‍💻**<u>🅰🅱🅾🆄🆃 🅲🆁🅴🅰🆃🅾🆁 :</u>**
-🦋 ʜɪ ᴍʏ ɴᴀᴍᴇ ɪꜱ ʟᴏɢᴇꜱʜ ,
-🦋 ᴀʙᴏᴜᴛ ᴍᴇ - [ʟᴏɢᴇꜱʜ](https://t.me/aboutlogesh/12)
-🦋 ᴍʏ ᴄʜᴀɴɴᴇʟꜱ :
-                    💜 [ʟɢ ʙᴏᴛꜱ](https://t.me/LGbots) 
-                    💜 [ʟᴏɢɪ ᴄʜᴀɴɴᴇʟ](https://t.me/LOGI_CHANNEL)
-                    
-                    💜 [ʜᴀᴄᴋᴇʀ x](https://t.me/hacker_x_x)
-                     ᴛʜᴀɴᴋꜱ ꜰᴏʀ ʀᴇᴀᴅ ɪᴛ ❤
-"""
+
+
