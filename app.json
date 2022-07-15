@@ -36,16 +36,16 @@
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Ramdi's database for you.",
         "value": "",
-        "required": false
+        "required": true
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
+        "description": "A name for your Music Bot. ",
         "value": "MUSIC BOT⁪⁬",
         "required": true
       },
       "OWNER_USERNAME": {
        "description": "the bot owner user name",
-       "value": "@cl_me_logesh",
+       "value": "cl_me_logesh",
        "required":true
       },
       "SUPPORT_CHANNEL": {
