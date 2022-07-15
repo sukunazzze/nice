@@ -79,7 +79,59 @@
 
 
 # ᴅᴇᴘʟᴏʏᴍᴇɴᴛ
-
+<details>
+<summary><b>ʟᴏᴄᴀʟ ʜᴏꜱᴛɪɴɢ ᴏʀ ᴠᴘꜱ</b></summary>
+<br>
+    
+    
+ 1.  ᴜᴘɢʀᴀᴅᴇ ᴀɴᴅ ᴜᴘᴅᴀᴛᴇ:
+    
+           sudo apt-get update && sudo apt-get upgrade -y
+    
+2. ɪɴꜱᴛᴀʟʟɪɴɢ ʀᴇQᴜɪʀᴇᴅ ᴘᴀᴄᴋᴀɢᴇꜱ:
+    
+           sudo apt-get install python3-pip ffmpeg -y
+    
+3. ꜱᴇᴛᴛɪɴɢ ᴜᴘ PIP 
+    
+           sudo pip3 install -U pip
+    
+4. ɪɴꜱᴛᴀʟʟɪɴɢ ɴᴏᴅᴇ
+    
+           curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm
+    
+5. ᴄʟᴏɴᴇ ᴛʜᴇ ʀᴇᴘᴏꜱɪᴛᴏʀʏ
+    
+    
+               git clone https://github.com/LOGI-LAB/LogiMusic &&  cd LogiMusic
+    
+6. ɪɴꜱᴛᴀʟʟ ʀᴇQᴜɪʀᴇᴍᴇɴᴛꜱ
+    
+           pip3 install -U -r requirements.txt
+    
+7. ᴄʀᴇᴀᴛᴇ .ᴇɴᴠ  ᴡɪᴛʜ ꜱᴀᴍᴘʟᴇ.ᴇɴᴠ
+    
+           cp sample.env .env
+    
+Edit .env with your vars 
+    
+8. ᴇᴅɪᴛɪɴɢ ᴠᴀʀꜱ: 
+    
+           vi .env
+    
+ᴇᴅɪᴛ .ᴇɴᴠ ᴡɪᴛʜ ʏᴏᴜʀ ᴠᴀʟᴜᴇꜱ ᴏʀ ʏᴏᴜ ᴄᴀɴ ꜱɪᴍᴘʟᴇ ᴄᴏᴘʏ ᴀ ᴄᴏɴꜰɪɢ ꜰʀᴏᴍ ʜᴇʀᴇ ᴀɴᴅ ᴘᴀꜱᴛᴇ ɪᴛ ᴛᴏ ʏᴏᴜʀ ɴᴏᴛᴇᴘᴀᴅ, ᴛʜᴇɴ ᴇᴅɪᴛ ᴀɴᴅ ᴘᴀꜱᴛᴇ ᴛʜᴇʀᴇ.
+    
+ᴘʀᴇꜱꜱ i ʙᴜᴛᴛᴏɴ ᴏɴ ᴋᴇʏʙᴏᴀʀᴅ ᴛᴏ ꜱᴛᴀʀᴛ ᴇᴅɪᴛɪɴɢ.
+    
+ᴘʀᴇꜱꜱ ᴄᴛʀʟ + ᴄ  ᴏɴᴄᴇ ʏᴏᴜ ᴀʀᴇ ᴅᴏɴᴇ ᴡɪᴛʜ ᴇᴅɪᴛɪɴɢ ᴠᴀʀꜱ ᴀɴᴅ ᴛʏᴘᴇ :wq ᴛᴏ ꜱᴀᴠᴇ .ᴇɴᴠ ᴏʀ :qa ᴛᴏ ᴇxɪᴛ ᴇᴅɪᴛɪɴɢ.
+    
+9. ꜰɪɴᴀʟʟʏ ʀᴜɴ  ᴍᴜꜱɪᴄ ʙᴏᴛ
+    
+         bash start
+    
+</br>
+</details>
+    
 
 <details>
 <summary><b>ʀᴇǫᴜɪʀᴇᴍᴇɴᴛs</b></summary>
@@ -96,7 +148,6 @@
 <details>
 <summary><b>sᴛʀɪɴɢ sᴇssɪᴏɴ</b></summary>
 <br>
-    
 > ʏᴏᴜ'ʟʟ ɴᴇᴇᴅ ᴀ ᴀᴘɪ_ɪᴅ & ᴀᴘɪ_ʜᴀsʜ ɪɴ ᴏʀᴅᴇʀ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴘʏʀᴏɢʀᴀᴍ sᴇssɪᴏɴ. 
 > ᴀʟᴡᴀʏs ʀᴇᴍᴇʙᴇʀ ᴛᴏ ᴜsᴇ ɢᴏᴏᴅ ᴀᴘɪ ᴄᴏᴍʙᴏ ᴇʟsᴇ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ᴄᴏᴜʟᴅ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ.
 
@@ -144,6 +195,7 @@
 
 
 
+</details>
 </details>
 </details>
 </details>
